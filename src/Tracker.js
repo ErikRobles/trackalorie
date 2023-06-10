@@ -3,7 +3,7 @@ import Storage from './Storage';
 class CalorieTracker {
     constructor() {
       this._calorieLimit = Storage.getCalorieLimit();
-      this._totalCalories = Storage.getTotalCalories(0);
+      this._totalCalories = Storage.getTotalCalories();
       this._meals = Storage.getMeals();
       this._workouts = Storage.getWorkouts();
   

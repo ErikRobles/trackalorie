@@ -15,9 +15,10 @@ class Storage {
   
     static getTotalCalories(defaultCalories = 0) {
       let totalCalories;
-      if (localStorage.getItem("defaultCalories") === null) {
+      if (localStorage.getItem("totalCalories") === null) {
         totalCalories = defaultCalories;
-      } else {
+      } 
+      else {
         totalCalories = +localStorage.getItem("totalCalories");
       }
       return totalCalories;
